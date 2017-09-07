@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ff6666;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: red;
+	text-align: center;
+	padding: 20px 135.8px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #4CAF50
+}
+</style>
+</head>
+<body>
+<ul>
+	<div class="w3-bar w3-black">
+	<button class="w3-bar-item w3-button" onclick="openPage(Home)"</button>
+  <li><a href="index.html">Home</a></li>
+  <button class="w3-bar-item w3-button" onclick="openPage(Siege Overall)"</button>
+  <li><a href="#Siege Overall">Siege Overall</a></li>
+   <button class="w3-bar-item w3-button" onclick="openPage(Operation Blood orchid)"</button>
+  <li><a href="#Operation Blood Orchid">Operation Blood orchid</a></li>
+<button class="w3-bar-item w3-button" onclick="openPage(Why it's a hobby)"</button>
+  <li><a href="#Why it's a hobby">Why it's a hobby</a></li>
+  
+
+ <!-- Add links to the #-->
+
+
+	
+	
+
+
+	</div>
+	</ul>	
+<div id="Home" class="w3-container w3-display-container Page">
+<h2>Home</h2>
+<p> Siege is lit</p>
+</div>
+
+<div id="Siege Overall" class="w3-container w3-display-container Page" style="display:none">
+<h2>Siege Overall</h2>
+<p></p>
+</div>
+
+<div id="Operation Blood orchid" class="w3-container w3-display-container Page" style="display:none">
+<h2>Operation Blood orchid</h2>
+<p></p>
+</div>
+
+<div id="Why it's a hobby" class="w3-container w3-display-container Page" style="display:none">
+<h2>Why it's a hobby</h2>
+<p></p>
+</div>
+
+<script>
+function openPage(pageName) {
+    var i;
+    var x = document.getElementsByClassName("Page");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(pageName).style.display = "block";  
+}
+
+</script>
+</body>
+</html> <!-- ends the html tag -->
